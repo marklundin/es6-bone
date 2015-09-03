@@ -1,5 +1,7 @@
+import Share        from 'easy-share-popup';
+import $            from 'jquery';
+
 import Analytics    from './utils/Analytics';
-import Share        from './utils/Share';
 import Templates    from './data/Templates';
 import Locale       from './data/Locale';
 import Router       from './router/Router';
@@ -7,7 +9,6 @@ import Nav          from './router/Nav';
 import AppData      from './AppData';
 import AppView      from './AppView';
 import MediaQueries from './utils/MediaQueries';
-import $            from 'jquery';
 
 class App {
 
