@@ -1,8 +1,9 @@
-import gulp from 'gulp';
-import rimraf from 'gulp-rimraf';
-import filter from 'gulp-filter';
-import rev from 'gulp-rev';
-import pkg from '../../package.json';
+import gulp       from 'gulp';
+import filter     from 'gulp-filter';
+import rev        from 'gulp-rev';
+import pkg        from '../../package.json';
+import del        from 'del';
+import vinylPaths from 'vinyl-paths';
 
 const exts = ['css', 'js'];
 const re   = new RegExp('(-[a-z0-9]{8})(.('+exts.join('|')+'))$', 'i');
@@ -26,6 +27,5 @@ gulp.task('revAssets', ['_versionCleanAssets'], () => {
 
     return gulp.src(src)
         .pipe(unHashedFilter)
-        .pipe(rimraf());
-
+        .pipe(vinylPaths(del))
 });

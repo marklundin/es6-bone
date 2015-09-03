@@ -1,3 +1,4 @@
+import $ from 'jquery';
 class DateUtils
 
 	// dateString should be in dd/mm/yy format

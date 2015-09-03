@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import APIRouteModel from '../models/core/APIRouteModel';
 
 class API {

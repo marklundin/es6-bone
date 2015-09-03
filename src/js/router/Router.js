@@ -1,3 +1,6 @@
+import Backbone from 'backbone';
+import $ from 'jquery';
+
 const staticProps = {
     EVENT_HASH_CHANGED: 'EVENT_HASH_CHANGED'
 }

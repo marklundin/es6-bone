@@ -1,15 +1,13 @@
-import Analytics from './utils/Analytics';
-import AuthManager from './utils/AuthManager';
-import Share from './utils/Share';
-import Facebook from './utils/Facebook';
-import GooglePlus from './utils/GooglePlus';
-import Templates from './data/Templates';
-import Locale from './data/Locale';
-import Router from './router/Router';
-import Nav from './router/Nav';
-import AppData from './AppData';
-import AppView from './AppView';
+import Analytics    from './utils/Analytics';
+import Share        from './utils/Share';
+import Templates    from './data/Templates';
+import Locale       from './data/Locale';
+import Router       from './router/Router';
+import Nav          from './router/Nav';
+import AppData      from './AppData';
+import AppView      from './AppView';
 import MediaQueries from './utils/MediaQueries';
+import $            from 'jquery';
 
 class App {
 
@@ -19,7 +17,9 @@ class App {
     localeCode    = window.config.localeCode;
     depedencyDfds = [];
 
-    constructor() {}
+    constructor() {
+        console.log('hello');
+    }
 
     setFlags() {
         const ua = window.navigator.userAgent.toLowerCase();
@@ -55,23 +55,15 @@ class App {
         this[classProp] = new ClassRef(remoteDep, this.depedencyLoaded.bind(this, dfd));
     }
 
-    initSDKs() {
-        Facebook.load();
-        GooglePlus.load();
-    }
-
     initApp() {
         this.setFlags();
 
         this.appView = new AppView();
         this.router  = new Router();
         this.nav     = new Nav();
-        this.auth    = new AuthManager();
         this.share   = new Share();
 
         this.go();
-
-        this.initSDKs();
     }
 
     go() {

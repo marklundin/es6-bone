@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /*
  Analytics wrapper
 */
@@ -25,7 +27,7 @@ class Analytics {
 
     }
 
-    // param string id of the tracking tag to be pushed on Analytics 
+    // param string id of the tracking tag to be pushed on Analytics
     track(param) {
 
         if (!this.started) {

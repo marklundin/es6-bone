@@ -1,9 +1,10 @@
 import AbstractView from '../AbstractView';
+import $ from 'jquery';
 
 const Preloader = AbstractView.extend({
 
 	cb : null,
-	
+
 	TRANSITION_TIME : 0.5,
 
 	constructor: function() {
@@ -45,7 +46,7 @@ const Preloader = AbstractView.extend({
 	onHideComplete: function() {
 
 		this.$el.css({'display' : 'none'});
-		
+
 		if (this.cb && typeof(this.cb) === 'function') {
 			this.cb();
 		}

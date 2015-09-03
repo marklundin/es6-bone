@@ -1,3 +1,4 @@
+import $ from 'jquery';
 class NumberUtils {
 
     static MATH_COS    = Math.cos;
@@ -61,7 +62,7 @@ class NumberUtils {
         if (constrainMax && num > max1) {
             return max2;
         }
-        
+
         const num1 = (num - min1) / (max1 - min1);
         const num2 = (num1 * (max2 - min2)) + min2;
 

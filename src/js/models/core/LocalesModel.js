@@ -1,3 +1,5 @@
+import Backbone from 'backbone';
+
 class LocalesModel extends Backbone.Model {
 
     defaults = {
@@ -5,7 +7,7 @@ class LocalesModel extends Backbone.Model {
         language : null,
         strings  : null
     };
-            
+
     get_language() {
 
         return this.get('language');

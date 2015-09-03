@@ -1,3 +1,5 @@
+import Backbone from 'backbone'
+
 class AbstractCollection extends Backbone.Collection {
 
 	__NAMESPACE__() {

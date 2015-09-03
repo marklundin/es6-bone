@@ -1,3 +1,5 @@
+import Backbone from 'backbone';
+
 class AbstractModel extends Backbone.DeepModel {
 
 	constructor(attrs, option) {

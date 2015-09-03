@@ -1,10 +1,12 @@
 import AbstractView from './view/AbstractView';
-import Preloader from './view/base/Preloader';
-import Header from './view/base/Header';
-import Wrapper from './view/base/Wrapper';
-import Footer from './view/base/Footer';
+import Preloader    from './view/base/Preloader';
+import Header       from './view/base/Header';
+import Wrapper      from './view/base/Wrapper';
+import Footer       from './view/base/Footer';
 import ModalManager from './view/modals/_ModalManager';
 import MediaQueries from './utils/MediaQueries';
+import $            from 'jquery';
+import _            from 'underscore';
 
 const AppView = AbstractView.extend({
 
@@ -45,19 +47,19 @@ const AppView = AbstractView.extend({
     disableTouch: function() {
 
         this.$window.on('touchmove', this.onTouchMove.bind(this));
-        
+
     },
 
     enableTouch: function() {
 
         this.$window.off('touchmove', this.onTouchMove.bind(this));
-        
+
     },
 
     onTouchMove: function( e ) {
 
         e.preventDefault();
-        
+
     },
 
     render: function() {

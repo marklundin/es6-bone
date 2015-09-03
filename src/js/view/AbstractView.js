@@ -1,3 +1,7 @@
+import _ from 'underscore';
+import $ from 'jquery';
+import Backbone from 'backbone';
+
 const AbstractView = Backbone.View.extend({
 
 	el           : null,
@@ -7,7 +11,7 @@ const AbstractView = Backbone.View.extend({
 	templateVars : null,
 
 	initialize: function() {
-		
+
 		this.children = [];
 
 		if (this.template) {
@@ -25,7 +29,7 @@ const AbstractView = Backbone.View.extend({
 		if (this.className) {
 			this.$el.addClass(this.className);
 		}
-		
+
 		this.init();
 
 		this.paused = false;
@@ -73,7 +77,7 @@ const AbstractView = Backbone.View.extend({
 		if (!child) {
 			return;
 		}
-		
+
 		const c = child.el ? child.$el : $(child);
 		if (c && child.dispose) {
 			child.dispose();

@@ -1,4 +1,5 @@
 import AbstractView from '../AbstractView';
+import $ from 'jquery';
 
 const AbstractModal = AbstractView.extend({
 

@@ -1,3 +1,5 @@
+import Backbone from 'backbone';
+
 const modelDefaults = {
 
     start         : "", // Eg: "{{ BASE_PATH }}/api/start"
@@ -14,7 +16,7 @@ const modelDefaults = {
     }
 };
 
-class APIRouteModel extends Backbone.DeepModel {
+class APIRouteModel extends Backbone.Model {
 
     constructor() {
         super(modelDefaults);

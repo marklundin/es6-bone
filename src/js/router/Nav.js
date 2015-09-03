@@ -1,5 +1,6 @@
+import Backbone     from 'backbone';
 import AbstractView from '../view/AbstractView';
-import Router from './Router';
+import Router       from './Router';
 
 const staticProps = {
     EVENT_CHANGE_VIEW     : 'EVENT_CHANGE_VIEW',

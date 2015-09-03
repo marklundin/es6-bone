@@ -1,4 +1,5 @@
 import AbstractView from './AbstractView';
+import $ from 'jquery';
 
 const AbstractViewPage = AbstractView.extend({
 
@@ -20,7 +21,7 @@ const AbstractViewPage = AbstractView.extend({
 
 		// replace with some proper transition if we can
 		this.$el.css({ 'visibility' : 'visible' });
-		
+
 		if (cb && typeof cb === 'function') {
 			cb();
 		}
@@ -43,7 +44,7 @@ const AbstractViewPage = AbstractView.extend({
 
 		// replace with some proper transition if we can
 		this.$el.css({ 'visibility' : 'hidden' });
-		
+
 		if (cb && typeof cb === 'function') {
 			cb();
 		}

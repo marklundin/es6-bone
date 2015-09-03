@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import LocalesModel from '../models/core/LocalesModel';
 import API from '../data/API';
 
@@ -40,7 +41,7 @@ class Locale {
         }
 
     }
-            
+
     getLang() {
 
         let lang;
@@ -82,7 +83,7 @@ class Locale {
 
     loadBackup() {
 
-        // When API not available, tries to load the static .txt locale 
+        // When API not available, tries to load the static .txt locale
 
         $.ajax({
             url      : this.backup,

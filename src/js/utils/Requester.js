@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /*
 Requester
 - Wrapper for `$.ajax` calls
@@ -30,7 +32,7 @@ class Requester {
 
         r.done(data.done);
         r.fail(data.fail);
-        
+
         return r;
 
     }
@@ -53,7 +55,7 @@ class Requester {
     }
 
     static deleteImage(id, done, fail) {
-        
+
         Requester.request({
             url    : '/api/images/'+id,
             type   : 'DELETE',
@@ -66,4 +68,4 @@ class Requester {
 }
 
 export default Requester;
-    
+

@@ -1,3 +1,4 @@
+
 class PostParser {
 
     static getRichText( post ) {

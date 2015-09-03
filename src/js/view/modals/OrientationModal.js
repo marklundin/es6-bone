@@ -1,4 +1,5 @@
 import AbstractModal from './AbstractModal';
+import $ from 'jquery';
 
 const OrientationModal = AbstractModal.extend({
 

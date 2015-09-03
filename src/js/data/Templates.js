@@ -1,4 +1,6 @@
-import TemplateModel from '../models/core/TemplateModel';
+import $                   from 'jquery';
+import Backbone            from 'backbone'
+import TemplateModel       from '../models/core/TemplateModel';
 import TemplatesCollection from '../collections/core/TemplatesCollection';
 
 class Templates {

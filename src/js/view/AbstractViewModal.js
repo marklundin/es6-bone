@@ -1,4 +1,5 @@
 import AbstractView from './AbstractView';
+import $ from 'jquery';
 
 const AbstractViewModal = AbstractView.extend({
 
@@ -26,7 +27,7 @@ const AbstractViewModal = AbstractView.extend({
 			return;
 		}
 		this._shown = false;
-		
+
 		this.animateOut(cb);
 
 	},
@@ -34,7 +35,7 @@ const AbstractViewModal = AbstractView.extend({
 	dispose: function() {
 
 		this.callChildrenAndSelf('setListeners', 'off');
-		
+
 	},
 
 	setListeners: function(setting) {
@@ -58,7 +59,7 @@ const AbstractViewModal = AbstractView.extend({
 	close: function() {
 
 		this.__NAMESPACE__().router.navigateTo(this.__NAMESPACE__().appView.wrapper.backgroundView.route);
-		
+
 	},
 
 	animateIn: function(cb) {

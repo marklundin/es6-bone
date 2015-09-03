@@ -1,6 +1,6 @@
 import AbstractData from './data/AbstractData';
 import Requester from './utils/Requester';
-import API from './data/API';
+// import API from './data/API';
 
 class AppData extends AbstractData {
 
@@ -25,34 +25,36 @@ class AppData extends AbstractData {
     // get app bootstrap data - embed in HTML or API endpoint
     getStartData() {
 
-        if (API.get('start')) {
+        this.callback();
 
-            const r = Requester.request({
-                url  : API.get('start'),
-                type : 'GET'
-            });
+        // if (API.get('start')) {
 
-            r.done(this.onStartDataReceived.bind(this));
-            r.fail( () => {
+        //     const r = Requester.request({
+        //         url  : API.get('start'),
+        //         type : 'GET'
+        //     });
 
-                // console.error "error loading api start data"
+        //     r.done(this.onStartDataReceived.bind(this));
+        //     r.fail( () => {
 
-                /*
-                this is only temporary, while there is no bootstrap data here, normally would handle error / fail
-                */
-                if (this.callback && typeof(this.callback) === 'function') {
-                    this.callback();
-                }
+        //         // console.error "error loading api start data"
 
-            });
 
-        } else {
+        //         // this is only temporary, while there is no bootstrap data here, normally would handle error / fail
 
-            if (this.callback && typeof(this.callback) === 'function') {
-                this.callback();
-            }
+        //         if (this.callback && typeof(this.callback) === 'function') {
+        //             this.callback();
+        //         }
 
-        }
+        //     });
+
+        // } else {
+
+        //     if (this.callback && typeof(this.callback) === 'function') {
+        //         this.callback();
+        //     }
+
+        // }
 
     }
 

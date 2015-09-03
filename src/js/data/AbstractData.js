@@ -1,3 +1,6 @@
+import _ from 'underscore';
+import Backbone from 'backbone';
+
 class AbstractData {
 
 	constructor() {
