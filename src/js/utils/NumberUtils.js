@@ -1,5 +1,8 @@
-import $ from 'jquery';
 class NumberUtils {
+
+    /*
+    TODO use https://www.npmjs.com/package/utils-perf instead
+    */
 
     static MATH_COS    = Math.cos;
     static MATH_SIN    = Math.sin;
