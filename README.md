@@ -10,7 +10,6 @@ Included Modules
 * [jQuery](https://www.npmjs.com/package/jquery)
 * [Backbone](https://www.npmjs.com/package/backbone)
 * [Underscore](https://www.npmjs.com/package/underscore)
-* [Backbone-deep-model](https://www.npmjs.com/package/backbone-deep-model)
 
 Although it technically works "out of the box" (*-ish*), really requires some configuration, and probably contains a lot of extra crap you don't need.
 
