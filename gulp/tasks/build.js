@@ -5,7 +5,7 @@ gulp.task('build', () => {
 
     const args = [
         'unrevAssets',
-        [ 'browserify', 'scss', 'vendor', 'images', 'dataMin', 'fonts' ],
+        [ 'browserify', 'scss', 'images', 'dataMin', 'fonts' ],
         'html'
     ];
 

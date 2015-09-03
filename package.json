@@ -2,31 +2,34 @@
   "name": "es6-bone",
   "description": "Boilerplate for single-page applications using ES6, Backbone, SASS and Gulp + Browserify.",
   "version": "0.0.1",
-  "homepage": "https://github.com/neilcarpenter/es6-bone",
+  "homepage": "https://github.com/silviopaganini/es6-bone",
   "author": {
-    "name": "Neil Carpenter <neilanthonycarpenter@gmail.com> (http://neilcarpenter.com/)"
+    "name": "Neil Carpenter <neilanthonycarpenter@gmail.com> (http://neilcarpenter.com/) | Silvio Paganini <s2paganini@gmail.com> (http://s2paganini.com)"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/neilcarpenter/es6-bone.git"
+    "url": "git://github.com/silviopaganini/es6-bone.git"
   },
   "bugs": {
-    "url": "https://github.com/neilcarpenter/es6-bone/issues"
+    "url": "https://github.com/silviopaganini/es6-bone/issues"
   },
+  "main": "src/js/index.js",
   "license": "MIT",
   "engines": {
     "node": ">= 0.10.32"
   },
   "folders": {
     "dest": "dist",
-    "src": "src",
-    "vendor": "src/vendor"
+    "src": "src"
   },
   "devDependencies": {
     "babel": "^5.6.14",
     "babelify": "^6.1.2",
+    "backbone": "^1.2.2",
+    "backbone-deep-model": "^0.11.0",
     "browser-sync": "~2.7.1",
     "browserify": "~6.0.3",
+    "gsap": "^1.17.0",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "~1.0.1",
     "gulp-changed": "^1.0.0",
@@ -48,25 +51,15 @@
     "gulp-strip-debug": "~1.0.1",
     "gulp-uglify": "~1.0.1",
     "gulp-util": "^3.0.1",
+    "jquery": "^2.1.4",
     "ncp": "^1.0.1",
     "pretty-hrtime": "^0.2.2",
+    "requestanimationframe": "0.0.22",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "~1.0.0",
     "walk": "^2.3.4",
     "watchify": "~2.0.0"
-  },
-  "vendor": {
-    "modernizr": "modernizr-dev.js",
-    "jquery": "jquery-2.1.0.js",
-    "underscore": "underscore.js",
-    "backbone": "backbone.js",
-    "backbone-deep-model": "backbone-deep-model.js",
-    "plugins": "plugins.js",
-    "tweenlite": "TweenLite.js",
-    "css-plugin": "CSSPlugin.js",
-    "easepack": "EasePack.js",
-    "script": "script.js"
   }
 }

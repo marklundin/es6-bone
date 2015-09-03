@@ -1,8 +1,16 @@
-# es6-bone
+# es6-bone + browserify modules
 
-JS (ES6) port of [coffee-bone](https://github.com/unit9/coffee-bone).
+Port of [coffee-bone](https://github.com/unit9/coffee-bone).
 
 Boilerplate for single page app built on ES6, Backbone, Sass, Gulp, Browserify, amongst other things...
+
+Included Modules
+* [RequestAnimationFrame](https://www.npmjs.com/package/requestanimationframe)
+* [GreenSock TweenMax](https://www.npmjs.com/package/gsap)
+* [jQuery](https://www.npmjs.com/package/jquery)
+* [Backbone](https://www.npmjs.com/package/backbone)
+* [Underscore](https://www.npmjs.com/package/underscore)
+* [Backbone-deep-model](https://www.npmjs.com/package/backbone-deep-model)
 
 Although it technically works "out of the box" (*-ish*), really requires some configuration, and probably contains a lot of extra crap you don't need.
 
@@ -69,17 +77,6 @@ Also note, ES7 `classProperties` are currently enabled through babel, but this i
 * `Analytics.js` - Google Analytics custom event firing, requires custom JSON containing ID / event string mappings.
 * `Share.js` - Wrapper for sharing to various social networks in popup windows (except FB, this should be done via `Facebook.js` class)
 * Others - just look around :)
-
-### Included SDKs
-
-These come packaged in wrapper classes that load the SDKs asynchronously and have some helper methods for API interaction
-* Facebook (`Facebook.js`)
-* Google+ (`GooglePlus.js`)
-
-### Included JS libs
-
-* Backbone (+ jQuery + Underscore + Backbone DeepModel)
-* TweenLite.js (+ CSSPlugin + EasePack)
 
 ### Sass
 
